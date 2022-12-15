@@ -1,0 +1,34 @@
+{
+    "name": "laravel-workflow/y",
+    "description": "Minimal non-conformant implementation of yEnc for storing binary strings in a database.",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "phpstan/phpstan": "^1.9",
+        "rector/rector": "^0.15.1",
+        "symplify/easy-coding-standard": "^11.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Y\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "rector": "vendor/bin/rector",
+        "ecs": "vendor/bin/ecs check --fix",
+        "stan": "vendor/bin/phpstan analyse src tests",
+        "test": "phpunit --testdox"
+    },
+    "authors": [
+        {
+            "name": "Richard McDaniel",
+            "email": "richard.lee.mcdaniel@gmail.com"
+        }
+    ]
+}
