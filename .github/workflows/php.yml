@@ -36,7 +36,7 @@ jobs:
       run: vendor/bin/ecs check
 
     - name: Run static analysis via PHPStan
-      run: vendor/bin/phpstan --xdebug analyse app tests
+      run: vendor/bin/phpstan --xdebug analyse src tests
 
     - name: Execute tests via PHPUnit
       run: composer run-script test
