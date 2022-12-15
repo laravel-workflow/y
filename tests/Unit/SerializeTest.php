@@ -36,7 +36,8 @@ final class TestSerialize extends TestCase
             'string empty' => [''],
             'string foo' => ['foo'],
             'string bytes' => [random_bytes(4096)],
-            'bool' => [true, false],
+            'true' => [true],
+            'false' => [false],
         ];
     }
 }

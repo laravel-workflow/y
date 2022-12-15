@@ -26,7 +26,7 @@ final class TestEncode extends TestCase
             'bytes' => [random_bytes(4096)],
             'bytes x2' => [random_bytes(8192)],
             'null' => ['\x00'],
-            'nul x2' => ['\x00\x00'],
+            'null x2' => ['\x00\x00'],
             'escape x2' => ['\x01\01'],
             'null escape' => ['\x00\x01'],
             'escape next' => ['\x01\x02'],
